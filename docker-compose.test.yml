@@ -1,0 +1,20 @@
+version: '3.5'
+
+services:
+  test:
+    build: ./test
+    volumes:
+      - data-mail:/var/vmail:ro
+      - data-tls:/media/tls:ro
+      - data-dkim:/media/dkim:ro
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      # For development
+      - ./test/rootfs/usr/share/tests:/usr/share/tests:ro
+    env_file: .env
+
+  # For development
+  # web:
+  #   volumes:
+  #     - ./web/rootfs/etc/nginx/nginx.conf.templ:/etc/nginx/nginx.conf.templ:ro
+  #   ports:
+  #     - "0.0.0.0:81:80"
