@@ -40,7 +40,7 @@ Installation (basic setup)
 --------------------------
 
 1. Run ```git clone git@github.com:jeboehm/docker-mailserver.git```
-2. Copy the file `.env.dist` to `.env` and change the variables in it according to your needs.
+2. Copy the file `cp .env.example .env` and change the variables in it according to your needs.
    The variables are described in the [Wiki](https://github.com/jeboehm/docker-mailserver/wiki/Configuration-variables).
 3. Run ```bin/production.sh pull``` to download the images.
 4. Run ```bin/production.sh up -d``` to start the services.
