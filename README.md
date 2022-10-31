@@ -39,13 +39,15 @@ Features
 Installation (basic setup)
 --------------------------
 
-1. Run ```git clone git@github.com:jeboehm/docker-mailserver.git```
+1. Run ```git clone git@github.com:abdoix/mailserver-engine.git```
 2. Copy the file `cp .env.example .env` and change the variables in it according to your needs.
    The variables are described in the [Wiki](https://github.com/jeboehm/docker-mailserver/wiki/Configuration-variables).
-3. Run ```bin/production.sh pull``` to download the images.
-4. Run ```bin/production.sh up -d``` to start the services.
-5. After a few seconds you can access the services listed in the paragraph [Services](#Services).
-6. Create your first email address and an admin user by running ```bin/production.sh run --rm web setup.sh```.
+3. Run ```sudo hostnamectl set-hostname mail.example.com``` to download the images.
+4. Run ``` a+x ./bin/production.sh``` for per.
+6. Run ```bin/production.sh pull``` to download the images.
+7. Run ```bin/production.sh up -d``` to start the services.
+8. After a few seconds you can access the services listed in the paragraph [Services](#Services).
+9. Create your first email address and an admin user by running ```bin/production.sh run --rm web setup.sh```.
    The wizard will ask you a few questions to set everything up.
 8. Now you can login to the management interface with your new account credentials.
 
