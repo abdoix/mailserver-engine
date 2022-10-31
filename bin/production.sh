@@ -17,7 +17,7 @@ else
     ADDITIONAL=""
 fi
 
-docker-compose \
+docker compose \
   -f docker-compose.yml \
   -f docker-compose.production.yml \
   ${ADDITIONAL} \

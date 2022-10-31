@@ -10,7 +10,7 @@ fi
 
 cd "${DIR}/../" || exit
 
-docker-compose \
+docker compose \
   -f docker-compose.yml \
   -f docker-compose.production.yml \
   -f docker-compose.test.yml \
